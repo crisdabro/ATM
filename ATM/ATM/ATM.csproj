@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EA854EF-0FB9-4CC8-AF2C-F2B343BB080E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATM</RootNamespace>
+    <AssemblyName>ATM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\CajeroDAO.cs" />
+    <Compile Include="DAO\CargoDAO.cs" />
+    <Compile Include="DAO\ClienteDAO.cs" />
+    <Compile Include="DAO\ComisionDAO.cs" />
+    <Compile Include="DAO\CuentaDAO.cs" />
+    <Compile Include="DAO\CuentaDestinoDAO.cs" />
+    <Compile Include="DAO\ImpuestoDAO.cs" />
+    <Compile Include="DAO\Interface_DAO.cs" />
+    <Compile Include="DAO\OperacionDAO.cs" />
+    <Compile Include="DAO\PersonaDAO.cs" />
+    <Compile Include="DAO\TarjetaDAO.cs" />
+    <Compile Include="DAO\TipoCuentaDAO.cs" />
+    <Compile Include="DAO\TipoOperacionDAO.cs" />
+    <Compile Include="Modelo\Cajero.cs" />
+    <Compile Include="Modelo\Carga.cs" />
+    <Compile Include="Modelo\Cliente.cs" />
+    <Compile Include="Modelo\Comision.cs" />
+    <Compile Include="Modelo\Cuenta.cs" />
+    <Compile Include="Modelo\CuentaDestino.cs" />
+    <Compile Include="Modelo\Impuesto.cs" />
+    <Compile Include="Modelo\Operacion.cs" />
+    <Compile Include="Modelo\Persona.cs" />
+    <Compile Include="Modelo\Tarjeta.cs" />
+    <Compile Include="Modelo\TipoCuenta.cs" />
+    <Compile Include="Modelo\TipoOperacion.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\CuentaDestinoMismoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\CuentaDestinoMismoBanco.designer.cs">
+      <DependentUpon>CuentaDestinoMismoBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\CuentaDestinoOtroBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\CuentaDestinoOtroBanco.designer.cs">
+      <DependentUpon>CuentaDestinoOtroBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SeleccionarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SeleccionarCuenta.Designer.cs">
+      <DependentUpon>SeleccionarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Extraccion_IngresarMonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Extraccion_IngresarMonto.Designer.cs">
+      <DependentUpon>Extraccion_IngresarMonto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FinalizacionOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FinalizacionOperacion.Designer.cs">
+      <DependentUpon>FinalizacionOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ImprimirOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ImprimirOperacion.Designer.cs">
+      <DependentUpon>ImprimirOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SeleccionarCuentaDestino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SeleccionarCuentaDestino.Designer.cs">
+      <DependentUpon>SeleccionarCuentaDestino.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\CuentaDestinoMismoBanco.resx">
+      <DependentUpon>CuentaDestinoMismoBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\CuentaDestinoOtroBanco.resx">
+      <DependentUpon>CuentaDestinoOtroBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ImprimirOperacion.resx">
+      <DependentUpon>ImprimirOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SeleccionarCuenta.resx">
+      <DependentUpon>SeleccionarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Extraccion_IngresarMonto.resx">
+      <DependentUpon>Extraccion_IngresarMonto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FinalizacionOperacion.resx">
+      <DependentUpon>FinalizacionOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SeleccionarCuentaDestino.resx">
+      <DependentUpon>SeleccionarCuentaDestino.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

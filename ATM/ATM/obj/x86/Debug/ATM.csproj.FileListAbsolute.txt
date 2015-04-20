@@ -1,0 +1,40 @@
+c:\users\usuario\documents\visual studio 2010\Projects\ATM\ATM\obj\x86\Debug\ATM.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2010\Projects\ATM\ATM\obj\x86\Debug\ATM.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2010\Projects\ATM\ATM\bin\Debug\ATM.exe
+c:\users\usuario\documents\visual studio 2010\Projects\ATM\ATM\bin\Debug\ATM.pdb
+c:\users\usuario\documents\visual studio 2010\Projects\ATM\ATM\obj\x86\Debug\ATM.exe
+c:\users\usuario\documents\visual studio 2010\Projects\ATM\ATM\obj\x86\Debug\ATM.pdb
+K:\ATM\ATM\obj\x86\Debug\ATM.exe
+K:\ATM\ATM\obj\x86\Debug\ATM.pdb
+C:\Users\Nico\Documents\Facultad\TSSI\Cajero\ATM\ATM\obj\x86\Debug\ATM.exe
+C:\Users\Nico\Documents\Facultad\TSSI\Cajero\ATM\ATM\obj\x86\Debug\ATM.pdb
+C:\Users\User\Documents\ATM\ATM\ATM\bin\Debug\ATM.exe
+C:\Users\User\Documents\ATM\ATM\ATM\bin\Debug\ATM.pdb
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Properties.Resources.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.SeleccionarCuenta.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.ExtraccionIngresarMonto.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.FinalizacionOperacion.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.LogIn.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.Menu.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.csproj.GenerateResource.Cache
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.exe
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.pdb
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.SeleccionarCuentaDestino.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.ImprimirOperacion.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.exe
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.pdb
+C:\Users\User\Desktop\ATM\ATM\bin\Debug\ATM.exe
+C:\Users\User\Desktop\ATM\ATM\bin\Debug\ATM.pdb
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Properties.Resources.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.CuentaDestinoMismoBanco.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.CuentaDestinoOtroBanco.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.ImprimirOperacion.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.SeleccionarCuenta.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.ExtraccionIngresarMonto.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.FinalizacionOperacion.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.LogIn.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.Menu.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.SeleccionarCuentaDestino.resources
+C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.csproj.GenerateResource.Cache
