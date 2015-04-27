@@ -9,17 +9,17 @@ namespace ATM.DAO
 {
     class ClienteDAO : Interface_DAO<Cliente>
     {
-        public List<Cliente> Agregar(List<Cliente> entidad)
+        public bool Agregar(Cliente entidad)
         {
             throw new NotImplementedException();
         }
 
-        public Cliente Modificar(Cliente entidad)
+        public bool Modificar(Cliente entidad)
         {
             throw new NotImplementedException();
         }
 
-        public void Borrar(Cliente entidad)
+        public bool Borrar(Cliente entidad)
         {
             throw new NotImplementedException();
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ATM.DAO
 {
-    class CargoDAO
+    public class CargoDAO
     {
     }
 }

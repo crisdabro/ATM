@@ -8,17 +8,17 @@ namespace ATM.DAO
 {
     class ImpuestoDAO : Interface_DAO<Impuesto>
     {
-        public List<Impuesto> Agregar(List<Impuesto> entidad)
+        public bool Agregar(Impuesto entidad)
         {
             throw new NotImplementedException();
         }
 
-        public Impuesto Modificar(Impuesto entidad)
+        public bool Modificar(Impuesto entidad)
         {
             throw new NotImplementedException();
         }
 
-        public void Borrar(Impuesto entidad)
+        public bool Borrar(Impuesto entidad)
         {
             throw new NotImplementedException();
         }

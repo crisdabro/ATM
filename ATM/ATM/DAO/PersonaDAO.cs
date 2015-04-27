@@ -8,17 +8,17 @@ namespace ATM.DAO
 {
     class PersonaDAO : Interface_DAO<Persona>
     {
-        public List<Persona> Agregar(List<Persona> entidad)
+        public bool Agregar(Persona entidad)
         {
             throw new NotImplementedException();
         }
 
-        public Persona Modificar(Persona entidad)
+        public bool Modificar(Persona entidad)
         {
             throw new NotImplementedException();
         }
 
-        public void Borrar(Persona entidad)
+        public bool Borrar(Persona entidad)
         {
             throw new NotImplementedException();
         }

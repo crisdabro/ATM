@@ -8,17 +8,17 @@ namespace ATM.DAO
 {
     class TarjetaDAO : Interface_DAO<Tarjeta>
     {
-        public List<Tarjeta> Agregar(List<Tarjeta> entidad)
+        public bool Agregar(Tarjeta entidad)
         {
             throw new NotImplementedException();
         }
 
-        public Tarjeta Modificar(Tarjeta entidad)
+        public bool Modificar(Tarjeta entidad)
         {
             throw new NotImplementedException();
         }
 
-        public void Borrar(Tarjeta entidad)
+        public bool Borrar(Tarjeta entidad)
         {
             throw new NotImplementedException();
         }

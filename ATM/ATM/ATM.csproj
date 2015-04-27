@@ -50,6 +50,7 @@
     <Compile Include="DAO\CargoDAO.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\ComisionDAO.cs" />
+    <Compile Include="DAO\ConnectBDD.cs" />
     <Compile Include="DAO\CuentaDAO.cs" />
     <Compile Include="DAO\CuentaDestinoDAO.cs" />
     <Compile Include="DAO\ImpuestoDAO.cs" />

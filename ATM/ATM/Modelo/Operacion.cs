@@ -80,7 +80,9 @@ namespace ATM.Modelo
         {
             operacion.TipoOperacion = new TipoOperacion();//por ahora despues hay q levantarla del dao dependiento el tipo
             operacion.TipoOperacion.Nombre = tipooperacion;
+            operacion.TipoOperacion.Costo = 15;
             operacion.Cajero = cajero;
+            
             return operacion;
         }
         public void RealizarExtraccion(int monto)

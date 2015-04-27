@@ -38,3 +38,5 @@ C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.LogIn.resources
 C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.Menu.resources
 C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.Vista.SeleccionarCuentaDestino.resources
 C:\Users\User\Desktop\ATM\ATM\obj\x86\Debug\ATM.csproj.GenerateResource.Cache
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.CuentaDestinoMismoBanco.resources
+C:\Users\User\Documents\ATM\ATM\ATM\obj\x86\Debug\ATM.Vista.CuentaDestinoOtroBanco.resources

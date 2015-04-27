@@ -8,17 +8,17 @@ namespace ATM.DAO
 {
     class TipoOperacionDAO : Interface_DAO<TipoOperacion>
     {
-        public List<TipoOperacion> Agregar(List<TipoOperacion> entidad)
+        public bool Agregar(TipoOperacion entidad)
         {
             throw new NotImplementedException();
         }
 
-        public TipoOperacion Modificar(TipoOperacion entidad)
+        public bool Modificar(TipoOperacion entidad)
         {
             throw new NotImplementedException();
         }
 
-        public void Borrar(TipoOperacion entidad)
+        public bool Borrar(TipoOperacion entidad)
         {
             throw new NotImplementedException();
         }

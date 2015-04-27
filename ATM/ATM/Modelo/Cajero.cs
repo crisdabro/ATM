@@ -1,7 +1,9 @@
-﻿namespace ATM.Modelo
+﻿using ATM.DAO;
+namespace ATM.Modelo
 {
     public class Cajero
     {
+         
         private int _idCajero;
         private double _dineroDisponible;
         private int _papelDisponible;
@@ -37,5 +39,6 @@
             get { return _idCajero; }
             set { _idCajero = value; }
         }
+
     }
 }
