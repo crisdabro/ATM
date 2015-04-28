@@ -9,9 +9,12 @@ namespace ATM.DAO
 {
     class ClienteDAO :DaoAbstractoSingleton<ClienteDAO>, Interface_DAO<Cliente>
     {
+        private List<Cliente> listaClientes = new List<Cliente>(); 
         public bool Agregar(Cliente entidad)
         {
-            throw new NotImplementedException();
+            listaClientes.Add(entidad);
+            return true;
+            
         }
 
         public bool Modificar(Cliente entidad)
@@ -26,12 +29,19 @@ namespace ATM.DAO
 
         public List<Cliente> DameAll()
         {
-            throw new NotImplementedException();
+            return listaClientes;
         }
 
         public Cliente DameXId(int id)
         {
-            throw new NotImplementedException();
+            foreach (Cliente cliente in listaClientes)
+            {
+                if (cliente.IdPersona == id)
+                {
+                    return cliente;
+                }
+            }
+            return null;
         }
     }
 }
