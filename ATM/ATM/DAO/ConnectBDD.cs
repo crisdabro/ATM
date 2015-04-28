@@ -8,8 +8,9 @@ namespace ATM.DAO
 {
     public class ConnectBDD
     {
-        private const string ConnectionString = @"Server=127.0.0.1;Database=cajero;Uid=root";
-
+        private const string ConnectionString = "Server=127.0.0.1;Uid=atm;Pwd=123;Database=test;";
+       
+        
 
         static public SqlConnection Connection = new SqlConnection(ConnectionString);
 
