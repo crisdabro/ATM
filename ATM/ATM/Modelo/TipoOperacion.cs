@@ -7,18 +7,18 @@ namespace ATM.Modelo
         private int _idTipoOperacion;      
         private string _nombre;
         private double _costo;
-        private List<Carga> _listaCargos;        
+        /*private List<Carga> _listaCargos;        
         private List<Impuesto> _listaImpuestos;       
-        private List<Comision> _listaComisiones;     
+        private List<Comision> _listaComisiones;*/     
 
-        public TipoOperacion(int idTipoOperacion, string nombre, double costo, List<Carga> listaCargos, List<Impuesto> listaImpuestos, List<Comision> listaComisiones)
+        public TipoOperacion(int idTipoOperacion, string nombre, double costo/*, List<Carga> listaCargos, List<Impuesto> listaImpuestos, List<Comision> listaComisiones*/)
         {
             _idTipoOperacion = idTipoOperacion;
             _nombre = nombre;
             _costo = costo;
-            _listaCargos = listaCargos;
+           /*_listaCargos = listaCargos;
             _listaImpuestos = listaImpuestos;
-            _listaComisiones = listaComisiones;           
+            _listaComisiones = listaComisiones;*/      
         }
 
         public TipoOperacion()
@@ -26,9 +26,9 @@ namespace ATM.Modelo
             _idTipoOperacion = 0;
             _nombre = "";
             _costo = 0.0;
-            _listaCargos = null;
+            /*_listaCargos = null;
             _listaImpuestos = null;
-            _listaComisiones = null;
+            _listaComisiones = null;*/
         }
 
         public int IdTipoOperacion
@@ -49,7 +49,7 @@ namespace ATM.Modelo
             set { _costo = value; }
         }
 
-        public List<Carga> ListaCargos
+        /*public List<Carga> ListaCargos
         {
             get { return _listaCargos; }
             set { _listaCargos = value; }
@@ -65,7 +65,7 @@ namespace ATM.Modelo
         {
             get { return _listaComisiones; }
             set { _listaComisiones = value; }
-        }
+        }*/
 
     }
 }

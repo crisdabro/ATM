@@ -41,21 +41,17 @@ namespace ATM.DAO
             return ListaCajeros;
         }
 
-       /* public Cajero DameXId(int id)
+       public Cajero DameXId(int id)
         {
-            foreach (var caj in ListaCajeros)
+            
+            foreach (Cajero cajero in ListaCajeros)
             {
-
-                
+                 if (cajero.IdCajero == id)
+                 {
+                     return cajero;
+                 }              
             }
-            (int i = 0; i < ListaCajeros.Count; i++)
-            {
-                if (ListaCajeros[i].IdCajero == id)
-                {
-                    return ListaCajeros[i];
-                }
-                
-            }
-        }*/
+           return null;
+        }
     }
 }

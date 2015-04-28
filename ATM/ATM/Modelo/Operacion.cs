@@ -8,17 +8,17 @@ namespace ATM.Modelo
         private DateTime _fecha;
         private double _monto;
         private Cajero _cajero;
-        private CuentaDestino _cuentaDestino;
+        private string _cbuDestino;
         private Cuenta _cuenta;
         private TipoOperacion _tipoOperacion;
 
-        public Operacion(int idOperacion, DateTime fecha, double monto, Cajero cajero, CuentaDestino cuentaDestino, Cuenta cuenta, TipoOperacion tipo)
+        public Operacion(int idOperacion, DateTime fecha, double monto, Cajero cajero, string cbuDestino, Cuenta cuenta, TipoOperacion tipo)
         {
             _idOperacion = idOperacion;
             _fecha = fecha;
             _monto = monto;
             _cajero = cajero;
-            _cuentaDestino = cuentaDestino;
+            _cbuDestino = cbuDestino;
             _cuenta = cuenta;
             _tipoOperacion = tipo;
         }
@@ -29,7 +29,7 @@ namespace ATM.Modelo
             _fecha = DateTime.MinValue;
             _monto = 0.0;
             _cajero = null; //hacer metodo get cajero
-            _cuentaDestino = null;
+            _cbuDestino = null;
             _cuenta = null;
             _tipoOperacion = null;
         }
@@ -52,11 +52,6 @@ namespace ATM.Modelo
             set { _cajero = value; }
         }
 
-        public CuentaDestino Destino
-        {
-            get { return _cuentaDestino; }
-            set { _cuentaDestino = value; }
-        }
 
         public Cuenta Cuenta
         {
@@ -74,6 +69,12 @@ namespace ATM.Modelo
         {
             get { return _idOperacion; }
             set { _idOperacion = value; }
+        }
+
+        public string CbuDestino
+        {
+            get { return _cbuDestino; }
+            set { _cbuDestino = value; }
         }
 
         public Operacion ComenzarOperacion(Operacion operacion, Cajero cajero,string tipooperacion)

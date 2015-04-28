@@ -8,6 +8,7 @@ namespace ATM.DAO
 {
     public class OperacionDAO : DaoAbstractoSingleton<OperacionDAO>, Interface_DAO<Operacion>
     {
+        public List<Operacion> ListaOperaciones = new List<Operacion>(); 
         public bool Agregar(Operacion entidad)
         {
             throw new NotImplementedException();

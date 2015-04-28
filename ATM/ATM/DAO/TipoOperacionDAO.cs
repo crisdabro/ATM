@@ -8,9 +8,10 @@ namespace ATM.DAO
 {
     class TipoOperacionDAO : DaoAbstractoSingleton<TipoCuentaDAO>, Interface_DAO<TipoOperacion>
     {
+        public List<TipoOperacion> ListaTipoOperaciones = new List<TipoOperacion>();
         public bool Agregar(TipoOperacion entidad)
         {
-            throw new NotImplementedException();
+            ListaTipoOperaciones.Add(entidad);
         }
 
         public bool Modificar(TipoOperacion entidad)
