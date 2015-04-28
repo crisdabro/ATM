@@ -53,6 +53,7 @@
     <Compile Include="DAO\ConnectBDD.cs" />
     <Compile Include="DAO\CuentaDAO.cs" />
     <Compile Include="DAO\CuentaDestinoDAO.cs" />
+    <Compile Include="DAO\DaoAbstractoSingleton.cs" />
     <Compile Include="DAO\ImpuestoDAO.cs" />
     <Compile Include="DAO\Interface_DAO.cs" />
     <Compile Include="DAO\OperacionDAO.cs" />
