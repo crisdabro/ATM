@@ -7,7 +7,7 @@ using ATM.Modelo;
 
 namespace ATM.DAO
 {
-    class ClienteDAO :DaoAbstractoSingleton<ClienteDAO>, Interface_DAO<Cliente>
+    class ClienteDAO : Interface_DAO<Cliente>
     {
         public bool Agregar(Cliente entidad)
         {

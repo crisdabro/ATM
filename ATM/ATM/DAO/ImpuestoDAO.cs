@@ -6,7 +6,7 @@ using ATM.Modelo;
 
 namespace ATM.DAO
 {
-    class ImpuestoDAO : DaoAbstractoSingleton<ImpuestoDAO>, Interface_DAO<Impuesto>
+    class ImpuestoDAO : Interface_DAO<Impuesto>
     {
         public bool Agregar(Impuesto entidad)
         {

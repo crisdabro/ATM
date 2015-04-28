@@ -6,7 +6,7 @@ using ATM.Modelo;
 
 namespace ATM.DAO
 {
-    class TarjetaDAO : DaoAbstractoSingleton<TarjetaDAO>, Interface_DAO<Tarjeta>
+    class TarjetaDAO : Interface_DAO<Tarjeta>
     {
         public bool Agregar(Tarjeta entidad)
         {
