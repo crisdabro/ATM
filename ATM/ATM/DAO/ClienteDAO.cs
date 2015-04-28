@@ -29,7 +29,7 @@ namespace ATM.DAO
             throw new NotImplementedException();
         }
 
-        public Cliente DameXId(string id)
+        public Cliente DameXId(int id)
         {
             throw new NotImplementedException();
         }

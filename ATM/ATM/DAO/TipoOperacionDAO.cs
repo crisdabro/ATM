@@ -28,7 +28,7 @@ namespace ATM.DAO
             throw new NotImplementedException();
         }
 
-        public TipoOperacion DameXId(string id)
+        public TipoOperacion DameXId(int id)
         {
             throw new NotImplementedException();
         }

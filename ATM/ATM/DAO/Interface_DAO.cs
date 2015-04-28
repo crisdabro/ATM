@@ -11,6 +11,6 @@ namespace ATM.DAO
         bool Modificar(T entidad);
         bool Borrar(T entidad);
         List<T> DameAll();
-        T DameXId(string id);
+        T DameXId(int id);
     }
 }

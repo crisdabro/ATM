@@ -6,12 +6,14 @@ namespace ATM.Modelo
          
         private int _idCajero;
         private double _dineroDisponible;
+        private double _dineroDepositado;
         private int _papelDisponible;
 
         public Cajero(int idCajero, double dinero, int papel)
         {
             _idCajero = idCajero;
             _dineroDisponible = dinero;
+
             _papelDisponible = papel;
         }
 
@@ -40,5 +42,10 @@ namespace ATM.Modelo
             set { _idCajero = value; }
         }
 
+        public double DineroDepositado
+        {
+            get { return _dineroDepositado; }
+            set { _dineroDepositado = value; }
+        }
     }
 }
