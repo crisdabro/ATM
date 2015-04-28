@@ -8,9 +8,12 @@ namespace ATM.DAO
 {
     class TarjetaDAO : DaoAbstractoSingleton<TarjetaDAO>, Interface_DAO<Tarjeta>
     {
+        public List<Tarjeta> ListaTarjetas = new List<Tarjeta>();
+
         public bool Agregar(Tarjeta entidad)
         {
-            throw new NotImplementedException();
+            ListaTarjetas.Add(entidad);
+            return true;
         }
 
         public bool Modificar(Tarjeta entidad)
@@ -25,12 +28,19 @@ namespace ATM.DAO
 
         public List<Tarjeta> DameAll()
         {
-            throw new NotImplementedException();
+            return ListaTarjetas;
         }
 
         public Tarjeta DameXId(int id)
         {
-            throw new NotImplementedException();
+            foreach (Tarjeta tarjeta in ListaTarjetas)
+            {
+                if (tarjeta.IdTarjeta == id)
+                {
+                    return tarjeta;
+                }
+            }
+            return null;
         }
     }
 }

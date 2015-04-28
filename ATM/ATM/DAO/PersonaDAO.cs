@@ -8,9 +8,12 @@ namespace ATM.DAO
 {
     class PersonaDAO : DaoAbstractoSingleton<PersonaDAO>, Interface_DAO<Persona>
     {
+        public List<Persona> ListaPersonas = new List<Persona>();
+
         public bool Agregar(Persona entidad)
         {
-            throw new NotImplementedException();
+            ListaPersonas.Add(entidad);
+            return true;
         }
 
         public bool Modificar(Persona entidad)
@@ -25,12 +28,19 @@ namespace ATM.DAO
 
         public List<Persona> DameAll()
         {
-            throw new NotImplementedException();
+            return ListaPersonas;
         }
 
         public Persona DameXId(int id)
         {
-            throw new NotImplementedException();
+            foreach (Persona persona in ListaPersonas)
+            {
+                if (persona.IdPersona == id)
+                {
+                    return persona;
+                }
+            }
+            return null;
         }
     }
 }
