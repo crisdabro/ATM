@@ -8,10 +8,11 @@ namespace ATM.DAO
 {
     class TipoOperacionDAO : DaoAbstractoSingleton<TipoCuentaDAO>, Interface_DAO<TipoOperacion>
     {
-        public List<TipoOperacion> ListaTipoOperaciones = new List<TipoOperacion>();
+        public List<TipoOperacion> ListaCompletaTipoOperaciones = new List<TipoOperacion>();
         public bool Agregar(TipoOperacion entidad)
         {
-            ListaTipoOperaciones.Add(entidad);
+            ListaCompletaTipoOperaciones.Add(entidad);
+            return true;
         }
 
         public bool Modificar(TipoOperacion entidad)
@@ -31,7 +32,26 @@ namespace ATM.DAO
 
         public TipoOperacion DameXId(int id)
         {
-            throw new NotImplementedException();
+            foreach (TipoOperacion tipoOperacion in ListaCompletaTipoOperaciones)
+            {
+                if (tipoOperacion.IdTipoOperacion == id)
+                {
+                    return tipoOperacion;
+                }
+            }
+            return null;
+        }
+
+        public TipoOperacion DameXId(string nombre)
+        {
+            foreach (TipoOperacion tipoOperacion in ListaCompletaTipoOperaciones)
+            {
+                if (tipoOperacion.Nombre == nombre)
+                {
+                    return tipoOperacion;
+                }
+            }
+            return null;
         }
     }
 }

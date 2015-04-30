@@ -47,5 +47,11 @@ namespace ATM.Modelo
             get { return _dineroDepositado; }
             set { _dineroDepositado = value; }
         }
+
+        //////////////////////////////////////////////////////// METODOS PARA ALMACENAMIENTO CON DAO DE LA CLASE //////////////////////////////////////////
+        
+        
+
+        //////////////////////////////////////////////////////// METODOS PARA ALMACENAMIENTO CON DAO DE LA CLASE //////////////////////////////////////////
     }
 }

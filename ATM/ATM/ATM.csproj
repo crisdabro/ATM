@@ -75,17 +75,17 @@
     <Compile Include="Modelo\TipoOperacion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\CuentaDestinoMismoBanco.cs">
+    <Compile Include="Vista\CuentaDestinoPropia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\CuentaDestinoMismoBanco.designer.cs">
-      <DependentUpon>CuentaDestinoMismoBanco.cs</DependentUpon>
+    <Compile Include="Vista\CuentaDestinoPropia.designer.cs">
+      <DependentUpon>CuentaDestinoPropia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\CuentaDestinoOtroBanco.cs">
+    <Compile Include="Vista\CuentaDestinoTerceros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\CuentaDestinoOtroBanco.designer.cs">
-      <DependentUpon>CuentaDestinoOtroBanco.cs</DependentUpon>
+    <Compile Include="Vista\CuentaDestinoTerceros.designer.cs">
+      <DependentUpon>CuentaDestinoTerceros.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\SeleccionarCuenta.cs">
       <SubType>Form</SubType>
@@ -138,11 +138,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vista\CuentaDestinoMismoBanco.resx">
-      <DependentUpon>CuentaDestinoMismoBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\CuentaDestinoPropia.resx">
+      <DependentUpon>CuentaDestinoPropia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\CuentaDestinoOtroBanco.resx">
-      <DependentUpon>CuentaDestinoOtroBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\CuentaDestinoTerceros.resx">
+      <DependentUpon>CuentaDestinoTerceros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\ImprimirOperacion.resx">
       <DependentUpon>ImprimirOperacion.cs</DependentUpon>

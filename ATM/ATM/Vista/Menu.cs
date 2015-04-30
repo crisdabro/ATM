@@ -14,21 +14,27 @@ namespace ATM.Vista
     {
         private Cliente _clienteActual;
         private Cajero _cajero;
+
         public Menu(Cliente cliente, Cajero cajero)
         {
             InitializeComponent();
             lblUsuario.Text = cliente.Nombre;
             _clienteActual = cliente;
             _cajero = cajero;
+        }
 
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnExtraccion_Click(object sender, EventArgs e)
         {
             Operacion operacion = new Operacion();
-            operacion.ComenzarOperacion(operacion,_cajero,"Extraccion");
+            operacion.ComenzarOperacion(operacion,_cajero, "Extraccion");
             SeleccionarCuenta aux = new SeleccionarCuenta(operacion,_clienteActual);
-            aux.ShowDialog();
+            aux.Show();
+            
         }
 
         private void btnDeposito_Click(object sender, EventArgs e)
@@ -36,12 +42,24 @@ namespace ATM.Vista
             Operacion operacion = new Operacion();
             operacion.ComenzarOperacion(operacion, _cajero, "Deposito");
             SeleccionarCuentaDestino aux = new SeleccionarCuentaDestino(operacion,_clienteActual);
-            aux.ShowDialog();
+            aux.Show();
+            
+        }
+        
+        private void btnTransferencia_Click(object sender, EventArgs e)
+        {
+            Operacion operacion = new Operacion();
+            operacion.ComenzarOperacion(operacion, _cajero, "Transferencia");
+            SeleccionarCuentaDestino aux = new SeleccionarCuentaDestino(operacion, _clienteActual);
+            aux.Show();    
         }
 
-        private void Menu_Load(object sender, EventArgs e)
+        private void btnDepositoTerceros_Click(object sender, EventArgs e)
         {
-            
+            Operacion operacion = new Operacion();
+            operacion.ComenzarOperacion(operacion, _cajero, "Deposito");
+            SeleccionarCuentaDestino aux = new SeleccionarCuentaDestino(operacion, _clienteActual);
+            aux.Show();
         }
     }
 }

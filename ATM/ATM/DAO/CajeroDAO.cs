@@ -11,11 +11,13 @@ namespace ATM.DAO
     class CajeroDAO:DaoAbstractoSingleton<CajeroDAO>, Interface_DAO<Cajero>
     {
        
-        public List<Cajero> ListaCajeros = new List<Cajero>(); 
+        public List<Cajero> ListaCompletaCajeros = new List<Cajero>(); 
+
         public bool Agregar(Cajero entidad)
         {
-            ListaCajeros.Add(entidad);
+            ListaCompletaCajeros.Add(entidad);
             return true;
+
             /*ConnectBDD.Conectar();
             SqlCommand cmd = new SqlCommand("insert into Cajeros(pk_cajero,dinero_disponible,papel_disponible) values(@pk_cajero,@dinero_disponible,@papel_disponible)", ConnectBDD.Connection);
             cmd.Parameters.AddWithValue("@pk_cajero", entidad.IdCajero);
@@ -38,13 +40,12 @@ namespace ATM.DAO
 
         public List<Cajero> DameAll()
         {
-            return ListaCajeros;
+            return ListaCompletaCajeros;
         }
 
-       public Cajero DameXId(int id)
+        public Cajero DameXId(int id)
         {
-            
-            foreach (Cajero cajero in ListaCajeros)
+            foreach (Cajero cajero in ListaCompletaCajeros)
             {
                  if (cajero.IdCajero == id)
                  {

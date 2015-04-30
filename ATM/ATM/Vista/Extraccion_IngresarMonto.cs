@@ -24,22 +24,14 @@ namespace ATM.Vista
             btnMonto2000.Click += btnExtraccion_Click;
             btnMonto3000.Click += btnExtraccion_Click;
         }
-
         
-
         private void btnExtraccion_Click(object sender, EventArgs e) //manejo todos los botones desde aca
         {
-
             var btn = (Button) sender;
-            _operacion.RealizarExtraccion(Convert.ToInt32(btn.Text));
+            _operacion.Extraccion(Convert.ToInt32(btn.Text));
             FinalizacionOperacion aux = new FinalizacionOperacion(_operacion);
-            aux.ShowDialog();
+            Hide();
+            aux.Show();
         }
-
-       
-
-        
-
-       
     }
 }

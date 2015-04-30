@@ -6,35 +6,41 @@ namespace ATM.Modelo
 {
     public class Cliente : Persona
     {
-        private List<Cuenta> _listaCuentas;
+        private int _idCliente;
         private string _situacionImpositiva;
-        private List<Tarjeta> _listaTarjetas;
+        private List<Cuenta> _listaCuentasCliente;
+        private List<Tarjeta> _listaTarjetasCliente;
 
-        public Cliente( string situacionImpositiva, int id, string nombre, string apellido, 
-            string dni, DateTime fechaNacimiento, string direccion, string telefono, string celular, string mail)
-            : base(id, nombre, apellido, dni, fechaNacimiento, mail, direccion, telefono, celular)
+        public Cliente(int idCliente, string situacionImpositiva, List<Cuenta> cuentasCliente, List<Tarjeta> tarjetasCliente,
+                       string nombre, string apellido, string dni, DateTime fechaNacimiento, string direccion, string telefono, string celular, string mail): base(idCliente, nombre, apellido, dni, fechaNacimiento, direccion, telefono, celular, mail)
+                       
         {
-            _listaCuentas = null;
-            _situacionImpositiva = null;
-            _listaTarjetas = null;         
+            IdCliente = idCliente;
+            SituacionImpositiva = situacionImpositiva;
+            ListaCuentas = cuentasCliente;
+            ListaTarjetas = tarjetasCliente;         
         }
        
-        public List<Cuenta> ListaCuentas
+        public int IdCliente
         {
-            get { return _listaCuentas; }
-            set { _listaCuentas = value; }
+            get { return _idCliente; }
+            set { _idCliente = value; }
         }
-
         public string SituacionImpositiva
         {
             get { return _situacionImpositiva; }
             set { _situacionImpositiva = value; }
         }
-
+        public List<Cuenta> ListaCuentas
+        {
+            get { return _listaCuentasCliente; }
+            set { _listaCuentasCliente = value; }
+        }
         public List<Tarjeta> ListaTarjetas
         {
-            get { return _listaTarjetas; }
-            set { _listaTarjetas = value; }
+            get { return _listaTarjetasCliente; }
+            set { _listaTarjetasCliente = value; }
         }
+
     }
 }

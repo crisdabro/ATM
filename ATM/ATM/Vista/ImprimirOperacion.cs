@@ -15,7 +15,13 @@ namespace ATM.Vista
         public ImprimirOperacion(Operacion operacion)
         {
             InitializeComponent();
+            lblMontoCtaCte.Text = "- - - -";
             lblMontoCajaAhorro.Text = operacion.Cuenta.Saldo.ToString();
+        }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

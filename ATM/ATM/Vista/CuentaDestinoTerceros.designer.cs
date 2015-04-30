@@ -1,6 +1,6 @@
 ﻿namespace ATM.Vista
 {
-    partial class CuentaDestinoOtroBanco
+    partial class CuentaDestinoTerceros
     {
         /// <summary>
         /// Required designer variable.

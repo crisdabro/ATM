@@ -13,17 +13,18 @@ namespace ATM.Vista
     public partial class SeleccionarCuentaDestino : Form
     {
         private Operacion _operacion;
-        private Cliente _clienteactual;
+        private Cliente _clienteActual;
         public SeleccionarCuentaDestino(Operacion operacion, Cliente clienteActual)
         {
             InitializeComponent();
             _operacion = operacion;
-            _clienteactual = clienteActual;
+            _clienteActual = clienteActual;
         }
 
         private void btnMismoBanco_Click(object sender, EventArgs e)
         {
-
+            CuentaDestinoPropia aux = new CuentaDestinoPropia(_operacion, _clienteActual);
+            Hide(); aux.ShowDialog();
         }
     }
 }

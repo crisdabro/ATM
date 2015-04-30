@@ -35,7 +35,7 @@ namespace ATM.DAO
         {
             foreach (Persona persona in ListaPersonas)
             {
-                if (persona.IdPersona == id)
+                if (persona.IdPropietario == id)
                 {
                     return persona;
                 }

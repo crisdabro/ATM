@@ -36,6 +36,8 @@
             this.lblCtaCte = new System.Windows.Forms.Label();
             this.btnExtraccion = new System.Windows.Forms.Button();
             this.btnDeposito = new System.Windows.Forms.Button();
+            this.btnTransferencia = new System.Windows.Forms.Button();
+            this.btnDepositoTerceros = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,9 +102,9 @@
             // 
             // btnExtraccion
             // 
-            this.btnExtraccion.Location = new System.Drawing.Point(12, 118);
+            this.btnExtraccion.Location = new System.Drawing.Point(21, 128);
             this.btnExtraccion.Name = "btnExtraccion";
-            this.btnExtraccion.Size = new System.Drawing.Size(75, 23);
+            this.btnExtraccion.Size = new System.Drawing.Size(88, 23);
             this.btnExtraccion.TabIndex = 2;
             this.btnExtraccion.Text = "Extracción";
             this.btnExtraccion.UseVisualStyleBackColor = true;
@@ -110,19 +112,41 @@
             // 
             // btnDeposito
             // 
-            this.btnDeposito.Location = new System.Drawing.Point(197, 118);
+            this.btnDeposito.Location = new System.Drawing.Point(163, 128);
             this.btnDeposito.Name = "btnDeposito";
-            this.btnDeposito.Size = new System.Drawing.Size(75, 23);
+            this.btnDeposito.Size = new System.Drawing.Size(88, 23);
             this.btnDeposito.TabIndex = 5;
             this.btnDeposito.Text = "Depósito";
             this.btnDeposito.UseVisualStyleBackColor = true;
             this.btnDeposito.Click += new System.EventHandler(this.btnDeposito_Click);
+            // 
+            // btnTransferencia
+            // 
+            this.btnTransferencia.Location = new System.Drawing.Point(21, 212);
+            this.btnTransferencia.Name = "btnTransferencia";
+            this.btnTransferencia.Size = new System.Drawing.Size(88, 23);
+            this.btnTransferencia.TabIndex = 6;
+            this.btnTransferencia.Text = "Transferencia";
+            this.btnTransferencia.UseVisualStyleBackColor = true;
+            this.btnTransferencia.Click += new System.EventHandler(this.btnTransferencia_Click);
+            // 
+            // btnDepositoTerceros
+            // 
+            this.btnDepositoTerceros.Location = new System.Drawing.Point(149, 212);
+            this.btnDepositoTerceros.Name = "btnDepositoTerceros";
+            this.btnDepositoTerceros.Size = new System.Drawing.Size(122, 23);
+            this.btnDepositoTerceros.TabIndex = 7;
+            this.btnDepositoTerceros.Text = "Deposito a terceros";
+            this.btnDepositoTerceros.UseVisualStyleBackColor = true;
+            this.btnDepositoTerceros.Click += new System.EventHandler(this.btnDepositoTerceros_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnDepositoTerceros);
+            this.Controls.Add(this.btnTransferencia);
             this.Controls.Add(this.btnDeposito);
             this.Controls.Add(this.btnExtraccion);
             this.Controls.Add(this.groupBox1);
@@ -145,5 +169,7 @@
         private System.Windows.Forms.Label lblCtaCte;
         private System.Windows.Forms.Button btnExtraccion;
         private System.Windows.Forms.Button btnDeposito;
+        private System.Windows.Forms.Button btnTransferencia;
+        private System.Windows.Forms.Button btnDepositoTerceros;
     }
 }

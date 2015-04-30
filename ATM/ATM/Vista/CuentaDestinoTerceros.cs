@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace ATM.Vista
 {
-    public partial class CuentaDestinoOtroBanco : Form
+    public partial class CuentaDestinoTerceros : Form
     {
-        public CuentaDestinoOtroBanco()
+        public CuentaDestinoTerceros()
         {
             InitializeComponent();
         }

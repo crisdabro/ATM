@@ -36,7 +36,7 @@ namespace ATM.DAO
         {
             foreach (Cliente cliente in listaClientes)
             {
-                if (cliente.IdPersona == id)
+                if (cliente.IdCliente == id)
                 {
                     return cliente;
                 }

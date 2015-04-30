@@ -8,9 +8,12 @@ namespace ATM.DAO
 {
     class CuentaDAO : DaoAbstractoSingleton<CuentaDAO>, Interface_DAO<Cuenta>
     {
+        public List<Cuenta> ListaCompletaCuentas = new List<Cuenta>(); 
+
         public bool Agregar(Cuenta entidad)
         {
-            throw new NotImplementedException();
+            ListaCompletaCuentas.Add(entidad);
+            return true;
         }
 
         public bool Modificar(Cuenta entidad)
@@ -25,12 +28,19 @@ namespace ATM.DAO
 
         public List<Cuenta> DameAll()
         {
-            throw new NotImplementedException();
+            return ListaCompletaCuentas;
         }
 
         public Cuenta DameXId(int id)
         {
-            throw new NotImplementedException();
+            foreach (Cuenta cuenta in ListaCompletaCuentas)
+            {
+                if (cuenta.Cbu == id)
+                {
+                    return cuenta;
+                }
+            }
+            return null;
         }
     }
 }

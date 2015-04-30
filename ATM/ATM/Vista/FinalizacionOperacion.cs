@@ -24,10 +24,23 @@ namespace ATM.Vista
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnImprimirComprobante_Click(object sender, EventArgs e)
         {
             ImprimirOperacion aux = new ImprimirOperacion(_operacion);
-            aux.ShowDialog();
+            Hide();
+            aux.Show();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        
     }
 }

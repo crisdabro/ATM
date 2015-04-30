@@ -10,34 +10,28 @@ namespace ATM.Modelo
         private int _idTarjeta;
         private int _numeroTarjeta;
         private Persona _propietario;
-        private string _desde;
-        private string _hasta;
+        private DateTime _desde;
+        private DateTime _vencimiento;
         private string _password;
-        private int _cantidadExtracciones;
-        private double _totalExtraido;
 
-        public Tarjeta(int idTarjeta, int numeroTarjeta, Persona propietario, string desde, string hasta, string password, int cantidadExtracciones, double totalExtraido)
+        public Tarjeta(int idTarjeta, int numeroTarjeta, Persona propietario, DateTime desde, DateTime hasta, string password)
         {
-            _idTarjeta = idTarjeta;
-            _numeroTarjeta = numeroTarjeta;
-            _propietario = propietario;
-            _desde = desde;
-            _hasta = hasta;
-            _password = password;
-            _cantidadExtracciones = cantidadExtracciones;
-            _totalExtraido = totalExtraido;
+            IdTarjeta = idTarjeta;
+            NumeroTarjeta = numeroTarjeta;
+            Propietario = propietario;
+            Desde = desde;
+            Vencimiento = hasta;
+            Password = password;
         }
 
         public Tarjeta()
         {
-            _idTarjeta = 0;
-            _numeroTarjeta = 0;
-            _propietario = null;
-            _desde = "";
-            _hasta = "";
-            _password = "";
-            _cantidadExtracciones = 0;
-            _totalExtraido = 0.0;
+            IdTarjeta = 0;
+            NumeroTarjeta = 0;
+            Propietario = null;
+            Desde = DateTime.MinValue;
+            Vencimiento = DateTime.MinValue;
+            Password = "";
         }
 
         public int IdTarjeta
@@ -45,47 +39,30 @@ namespace ATM.Modelo
             get { return _idTarjeta; }
             set { _idTarjeta = value; }
         }
-
         public int NumeroTarjeta
         {
             get { return _numeroTarjeta; }
             set { _numeroTarjeta = value; }
         }
-
         public Persona Propietario
         {
             get { return _propietario; }
             set { _propietario = value; }
         }
-
-        public string Desde
+        public DateTime Desde
         {
             get { return _desde; }
             set { _desde = value; }
         }
-
-        public string Vencimiento
+        public DateTime Vencimiento
         {
-            get { return _hasta; }
-            set { _hasta = value; }
+            get { return _vencimiento; }
+            set { _vencimiento = value; }
         }
-
         public string Password
         {
             get { return _password; }
             set { _password = value; }
-        }
-
-        public int CantidadExtracciones
-        {
-            get { return _cantidadExtracciones; }
-            set { _cantidadExtracciones = value; }
-        }
-
-        public double TotalExtraido
-        {
-            get { return _totalExtraido; }
-            set { _totalExtraido = value; }
         }
     }
 }

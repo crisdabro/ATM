@@ -26,23 +26,20 @@ namespace ATM.Vista
         }
         private void btnCajaAhorro_Click(object sender, EventArgs e)
         {
-            if (_operacion.TipoOperacion.Nombre == "Extraccion")
-            {
-                _operacion.Cuenta = _clienteactual.ListaCuentas[0];//depsues hacer un find
-                ExtraccionIngresarMonto aux = new ExtraccionIngresarMonto(_operacion);
-                aux.ShowDialog();
-            }
+            _operacion.Cuenta = _clienteactual.ListaCuentas[0];//depsues hacer un find ?????????????????????????????
+            ExtraccionIngresarMonto aux = new ExtraccionIngresarMonto(_operacion);
+            Hide();
+            aux.ShowDialog();
+            
             
         }
 
         private void btnCtaCte_Click(object sender, EventArgs e)
         {
-            if (_operacion.TipoOperacion.Nombre == "Extraccion")
-            {
-                _operacion.Cuenta = _clienteactual.ListaCuentas[1];//depsues hacer un find
-                ExtraccionIngresarMonto aux = new ExtraccionIngresarMonto(_operacion);
-                aux.ShowDialog();
-            }
+            _operacion.Cuenta = _clienteactual.ListaCuentas[1];//depsues hacer un find ??????????????????
+            ExtraccionIngresarMonto aux = new ExtraccionIngresarMonto(_operacion);
+            Hide();
+            aux.ShowDialog();
         }
             
             

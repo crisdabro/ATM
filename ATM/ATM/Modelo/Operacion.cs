@@ -77,7 +77,7 @@ namespace ATM.Modelo
             set { _cbuDestino = value; }
         }
 
-        public Operacion ComenzarOperacion(Operacion operacion, Cajero cajero,string tipooperacion)
+        public Operacion ComenzarOperacion(Operacion operacion, Cajero cajero, string tipooperacion)
         {
             operacion.TipoOperacion = new TipoOperacion();//por ahora despues hay q levantarla del dao dependiento el tipo
             operacion.TipoOperacion.Nombre = tipooperacion;
@@ -86,14 +86,27 @@ namespace ATM.Modelo
             
             return operacion;
         }
-        public void RealizarExtraccion(int monto)
+        public void Extraccion(int monto)
         {
-            this._monto = monto;
-            if (this.Cuenta.Saldo >= monto)
+            TipoOperacion.Nombre = "Extraccion";
+            Monto = monto;
+            if (Cuenta.Saldo >= monto)
             {
-                this.Cuenta.Saldo -= monto;
+                Cuenta.Saldo -= monto;
             }
         }
-       
+
+        public void Deposito(int monto)
+        {
+            TipoOperacion.Nombre = "Deposito";
+            Monto = monto;
+            Cuenta.Saldo += monto;
+        }
+
+        public void Transferencia(int monto, int cbuDestino)
+        {
+
+        }
+
     }
 }

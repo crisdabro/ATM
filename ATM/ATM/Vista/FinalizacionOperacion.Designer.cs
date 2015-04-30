@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnImprimirComprobante = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,52 +43,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "OPERACION REALIZADA CON EXITO";
             // 
-            // button1
+            // btnImprimirComprobante
             // 
-            this.button1.Location = new System.Drawing.Point(49, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "IMPRIMIR COMPROBANTE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnImprimirComprobante.Location = new System.Drawing.Point(49, 69);
+            this.btnImprimirComprobante.Name = "btnImprimirComprobante";
+            this.btnImprimirComprobante.Size = new System.Drawing.Size(191, 44);
+            this.btnImprimirComprobante.TabIndex = 1;
+            this.btnImprimirComprobante.Text = "IMPRIMIR COMPROBANTE";
+            this.btnImprimirComprobante.UseVisualStyleBackColor = true;
+            this.btnImprimirComprobante.Click += new System.EventHandler(this.btnImprimirComprobante_Click);
             // 
-            // button2
+            // btnMenu
             // 
-            this.button2.Location = new System.Drawing.Point(49, 151);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "MENU";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMenu.Location = new System.Drawing.Point(49, 119);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(191, 44);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "MENU";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // button3
+            // btnSalir
             // 
-            this.button3.Location = new System.Drawing.Point(49, 206);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(191, 44);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "SALIR";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(49, 98);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(191, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "CONTINUAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(49, 169);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(191, 44);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FinalizacionOperacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btnImprimirComprobante);
             this.Controls.Add(this.label1);
             this.Name = "FinalizacionOperacion";
             this.Text = "FinalizacionOperacion_";
@@ -102,9 +93,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnImprimirComprobante;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
