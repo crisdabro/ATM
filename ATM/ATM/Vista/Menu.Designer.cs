@@ -38,6 +38,7 @@
             this.btnDeposito = new System.Windows.Forms.Button();
             this.btnTransferencia = new System.Windows.Forms.Button();
             this.btnDepositoTerceros = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,7 +123,7 @@
             // 
             // btnTransferencia
             // 
-            this.btnTransferencia.Location = new System.Drawing.Point(21, 212);
+            this.btnTransferencia.Location = new System.Drawing.Point(21, 182);
             this.btnTransferencia.Name = "btnTransferencia";
             this.btnTransferencia.Size = new System.Drawing.Size(88, 23);
             this.btnTransferencia.TabIndex = 6;
@@ -132,7 +133,7 @@
             // 
             // btnDepositoTerceros
             // 
-            this.btnDepositoTerceros.Location = new System.Drawing.Point(149, 212);
+            this.btnDepositoTerceros.Location = new System.Drawing.Point(149, 182);
             this.btnDepositoTerceros.Name = "btnDepositoTerceros";
             this.btnDepositoTerceros.Size = new System.Drawing.Size(122, 23);
             this.btnDepositoTerceros.TabIndex = 7;
@@ -140,11 +141,23 @@
             this.btnDepositoTerceros.UseVisualStyleBackColor = true;
             this.btnDepositoTerceros.Click += new System.EventHandler(this.btnDepositoTerceros_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSalir.Location = new System.Drawing.Point(65, 211);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(139, 39);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir del Sistema";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDepositoTerceros);
             this.Controls.Add(this.btnTransferencia);
             this.Controls.Add(this.btnDeposito);
@@ -171,5 +184,6 @@
         private System.Windows.Forms.Button btnDeposito;
         private System.Windows.Forms.Button btnTransferencia;
         private System.Windows.Forms.Button btnDepositoTerceros;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

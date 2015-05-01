@@ -38,7 +38,7 @@ namespace ATM.Vista
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         
