@@ -32,8 +32,8 @@ namespace ATM.Vista
         {
             Operacion operacion = new Operacion();
             operacion.ComenzarOperacion(operacion,_cajero, "Extraccion");
-            SeleccionarCuenta aux = new SeleccionarCuenta(operacion,_clienteActual);
-            aux.Show();
+            SeleccionarTipoCuentaPropia aux = new SeleccionarTipoCuentaPropia(operacion,_clienteActual);
+            aux.ShowDialog();
             
         }
 
@@ -42,8 +42,8 @@ namespace ATM.Vista
             Operacion operacion = new Operacion();
             operacion.ComenzarOperacion(operacion, _cajero, "Deposito");
             SeleccionarCuentaDestino aux = new SeleccionarCuentaDestino(operacion,_clienteActual);
-            aux.Show();
-            
+            aux.ShowDialog();
+            Close();
         }
         
         private void btnTransferencia_Click(object sender, EventArgs e)
@@ -51,15 +51,17 @@ namespace ATM.Vista
             Operacion operacion = new Operacion();
             operacion.ComenzarOperacion(operacion, _cajero, "Transferencia");
             SeleccionarCuentaDestino aux = new SeleccionarCuentaDestino(operacion, _clienteActual);
-            aux.Show();    
+            aux.ShowDialog();
+            Close();
         }
 
         private void btnDepositoTerceros_Click(object sender, EventArgs e)
         {
             Operacion operacion = new Operacion();
             operacion.ComenzarOperacion(operacion, _cajero, "Deposito");
-            SeleccionarCuentaDestino aux = new SeleccionarCuentaDestino(operacion, _clienteActual);
-            aux.Show();
+            CuentaDestinoTerceros aux = new CuentaDestinoTerceros(operacion, _clienteActual);
+            aux.ShowDialog();
+            Close();
         }
     }
 }

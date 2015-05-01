@@ -51,8 +51,8 @@ namespace ATM.Vista
             }
             _operacion.Deposito(Convert.ToInt32(txtMontoDeposito.Text));
             FinalizacionOperacion aux = new FinalizacionOperacion(_operacion);
-            Hide();
-            aux.Show();
+            aux.ShowDialog();
+            Close();
         }
 
 

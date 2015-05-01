@@ -67,9 +67,8 @@ namespace ATM.Vista
 
 
             Menu menu = new Menu(cliente, cajero);
-            Hide();
-            menu.Show();
-            
+            menu.ShowDialog();
+            Close();
         }
     }
 }

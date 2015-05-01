@@ -87,11 +87,11 @@
     <Compile Include="Vista\CuentaDestinoTerceros.designer.cs">
       <DependentUpon>CuentaDestinoTerceros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\SeleccionarCuenta.cs">
+    <Compile Include="Vista\SeleccionarTipoCuentaPropia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\SeleccionarCuenta.Designer.cs">
-      <DependentUpon>SeleccionarCuenta.cs</DependentUpon>
+    <Compile Include="Vista\SeleccionarTipoCuentaPropia.Designer.cs">
+      <DependentUpon>SeleccionarTipoCuentaPropia.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Extraccion_IngresarMonto.cs">
       <SubType>Form</SubType>
@@ -147,8 +147,8 @@
     <EmbeddedResource Include="Vista\ImprimirOperacion.resx">
       <DependentUpon>ImprimirOperacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\SeleccionarCuenta.resx">
-      <DependentUpon>SeleccionarCuenta.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\SeleccionarTipoCuentaPropia.resx">
+      <DependentUpon>SeleccionarTipoCuentaPropia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Extraccion_IngresarMonto.resx">
       <DependentUpon>Extraccion_IngresarMonto.cs</DependentUpon>

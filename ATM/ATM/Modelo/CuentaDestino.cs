@@ -9,18 +9,18 @@
 
         public CuentaDestino(int idcuentaDestino, string banco, int cbu, string sucursal)
         {
-            _idcuentaDestino = idcuentaDestino;
-            _banco = banco;
-            _cbu = cbu;
-            _sucursal = sucursal;
+            IdcuentaDestino = idcuentaDestino;
+            Banco = banco;
+            Cbu = cbu;
+            Sucursal = sucursal;
         }
 
         public CuentaDestino()
         {
-            _idcuentaDestino = 0;
-            _banco = "";
-            _cbu = 0;
-            _sucursal = "";
+            IdcuentaDestino = 0;
+            Banco = "";
+            Cbu = 0;
+            Sucursal = "";
         }
 
         public string Banco

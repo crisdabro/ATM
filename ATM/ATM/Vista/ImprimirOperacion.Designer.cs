@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblMontoCajaAhorro = new System.Windows.Forms.Label();
-            this.lblMontoCtaCte = new System.Windows.Forms.Label();
+            this.lblMostrarMontoCajaAhorro = new System.Windows.Forms.Label();
+            this.lblMostrarMontoCtaCte = new System.Windows.Forms.Label();
             this.lblSaldoCajaAhorro = new System.Windows.Forms.Label();
             this.lblSaldoCtaCte = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -40,8 +40,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblMontoCajaAhorro);
-            this.groupBox1.Controls.Add(this.lblMontoCtaCte);
+            this.groupBox1.Controls.Add(this.lblMostrarMontoCajaAhorro);
+            this.groupBox1.Controls.Add(this.lblMostrarMontoCtaCte);
             this.groupBox1.Controls.Add(this.lblSaldoCajaAhorro);
             this.groupBox1.Controls.Add(this.lblSaldoCtaCte);
             this.groupBox1.Controls.Add(this.lblUsuario);
@@ -52,23 +52,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TEST";
             // 
-            // lblMontoCajaAhorro
+            // lblMostrarMontoCajaAhorro
             // 
-            this.lblMontoCajaAhorro.AutoSize = true;
-            this.lblMontoCajaAhorro.Location = new System.Drawing.Point(135, 92);
-            this.lblMontoCajaAhorro.Name = "lblMontoCajaAhorro";
-            this.lblMontoCajaAhorro.Size = new System.Drawing.Size(58, 13);
-            this.lblMontoCajaAhorro.TabIndex = 4;
-            this.lblMontoCajaAhorro.Text = "MontoCaja";
+            this.lblMostrarMontoCajaAhorro.AutoSize = true;
+            this.lblMostrarMontoCajaAhorro.Location = new System.Drawing.Point(135, 92);
+            this.lblMostrarMontoCajaAhorro.Name = "lblMostrarMontoCajaAhorro";
+            this.lblMostrarMontoCajaAhorro.Size = new System.Drawing.Size(58, 13);
+            this.lblMostrarMontoCajaAhorro.TabIndex = 4;
+            this.lblMostrarMontoCajaAhorro.Text = "MontoCaja";
             // 
-            // lblMontoCtaCte
+            // lblMostrarMontoCtaCte
             // 
-            this.lblMontoCtaCte.AutoSize = true;
-            this.lblMontoCtaCte.Location = new System.Drawing.Point(135, 63);
-            this.lblMontoCtaCte.Name = "lblMontoCtaCte";
-            this.lblMontoCtaCte.Size = new System.Drawing.Size(79, 13);
-            this.lblMontoCtaCte.TabIndex = 3;
-            this.lblMontoCtaCte.Text = "MontoCTACTE";
+            this.lblMostrarMontoCtaCte.AutoSize = true;
+            this.lblMostrarMontoCtaCte.Location = new System.Drawing.Point(135, 63);
+            this.lblMostrarMontoCtaCte.Name = "lblMostrarMontoCtaCte";
+            this.lblMostrarMontoCtaCte.Size = new System.Drawing.Size(79, 13);
+            this.lblMostrarMontoCtaCte.TabIndex = 3;
+            this.lblMostrarMontoCtaCte.Text = "MontoCTACTE";
             // 
             // lblSaldoCajaAhorro
             // 
@@ -125,8 +125,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblMontoCajaAhorro;
-        private System.Windows.Forms.Label lblMontoCtaCte;
+        private System.Windows.Forms.Label lblMostrarMontoCajaAhorro;
+        private System.Windows.Forms.Label lblMostrarMontoCtaCte;
         private System.Windows.Forms.Label lblSaldoCajaAhorro;
         private System.Windows.Forms.Label lblSaldoCtaCte;
         private System.Windows.Forms.Label lblUsuario;

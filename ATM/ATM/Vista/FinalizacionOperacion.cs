@@ -21,19 +21,19 @@ namespace ATM.Vista
 
         private void FinalizacionOperacion__Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnImprimirComprobante_Click(object sender, EventArgs e)
         {
             ImprimirOperacion aux = new ImprimirOperacion(_operacion);
-            Hide();
-            aux.Show();
+            aux.ShowDialog();
+            Close();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Hide();
+            Close();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

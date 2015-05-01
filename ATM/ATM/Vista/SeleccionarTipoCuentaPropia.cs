@@ -10,15 +10,15 @@ using ATM.Modelo;
 
 namespace ATM.Vista
 {
-    public partial class SeleccionarCuenta : Form
+    public partial class SeleccionarTipoCuentaPropia : Form
     {
         private Operacion _operacion;
-        private Cliente _clienteactual;
-        public SeleccionarCuenta(Operacion operacion, Cliente clienteActual)
+        private Cliente _clienteActual;
+        public SeleccionarTipoCuentaPropia(Operacion operacion, Cliente clienteActual)
         {
             InitializeComponent();
             _operacion = operacion;
-            _clienteactual = clienteActual;
+            _clienteActual = clienteActual;
             
             //si es una extraccion mostrar cuentas propias
             //si es deposito mostrar todas
@@ -26,20 +26,31 @@ namespace ATM.Vista
         }
         private void btnCajaAhorro_Click(object sender, EventArgs e)
         {
-            _operacion.Cuenta = _clienteactual.ListaCuentas[0];//depsues hacer un find ?????????????????????????????
+            foreach (Cuenta _datosCuenta in _clienteActual.ListaCuentas)
+            {
+                if (_datosCuenta.TipoCuenta.NombreTipo == "Caja Ahorro")
+                {
+                    _operacion.Cuenta = _datosCuenta;
+                }
+            }
             ExtraccionIngresarMonto aux = new ExtraccionIngresarMonto(_operacion);
-            Hide();
             aux.ShowDialog();
-            
+            Close();
             
         }
 
         private void btnCtaCte_Click(object sender, EventArgs e)
         {
-            _operacion.Cuenta = _clienteactual.ListaCuentas[1];//depsues hacer un find ??????????????????
+            foreach (Cuenta _datosCuenta in _clienteActual.ListaCuentas)
+            {
+                if (_datosCuenta.TipoCuenta.NombreTipo == "CtaCrt")
+                {
+                    _operacion.Cuenta = _datosCuenta;
+                }
+            }
             ExtraccionIngresarMonto aux = new ExtraccionIngresarMonto(_operacion);
-            Hide();
             aux.ShowDialog();
+            Close();
         }
             
             

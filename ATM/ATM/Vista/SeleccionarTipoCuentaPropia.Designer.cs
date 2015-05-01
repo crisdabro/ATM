@@ -1,6 +1,6 @@
 ﻿namespace ATM.Vista
 {
-    partial class SeleccionarCuenta
+    partial class SeleccionarTipoCuentaPropia
     {
         /// <summary>
         /// Required designer variable.

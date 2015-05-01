@@ -54,6 +54,7 @@
             this.btnOtroBanco.TabIndex = 5;
             this.btnOtroBanco.Text = "Otro Banco";
             this.btnOtroBanco.UseVisualStyleBackColor = true;
+            this.btnOtroBanco.Click += new System.EventHandler(this.btnOtroBanco_Click);
             // 
             // btnMismoBanco
             // 

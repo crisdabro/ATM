@@ -30,8 +30,9 @@ namespace ATM.Vista
             var btn = (Button) sender;
             _operacion.Extraccion(Convert.ToInt32(btn.Text));
             FinalizacionOperacion aux = new FinalizacionOperacion(_operacion);
-            Hide();
-            aux.Show();
+            aux.ShowDialog();
+            Close();
+
         }
     }
 }

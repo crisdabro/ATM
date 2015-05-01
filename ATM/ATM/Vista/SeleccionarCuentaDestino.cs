@@ -23,8 +23,16 @@ namespace ATM.Vista
 
         private void btnMismoBanco_Click(object sender, EventArgs e)
         {
-            CuentaDestinoPropia aux = new CuentaDestinoPropia(_operacion, _clienteActual);
-            Hide(); aux.ShowDialog();
+            CuentaDestinoTerceros aux = new CuentaDestinoTerceros(_operacion, _clienteActual);
+            aux.ShowDialog();
+            Close();
+        }
+
+        private void btnOtroBanco_Click(object sender, EventArgs e)
+        {
+            CuentaDestinoTerceros aux = new CuentaDestinoTerceros(_operacion, _clienteActual);
+            aux.ShowDialog();
+            Close();
         }
     }
 }
