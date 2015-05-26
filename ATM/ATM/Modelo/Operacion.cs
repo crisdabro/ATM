@@ -90,10 +90,13 @@ namespace ATM.Modelo
         {
             TipoOperacion.Nombre = "Extraccion";
             Monto = monto;
-            if (Cuenta.Saldo >= monto)
+            if (Cuenta.Saldo >= monto && monto <= this.Cajero.Dinerodisponible)
             {
                 Cuenta.Saldo -= monto;
-            }
+                Cuenta.TotalExtraidoDiario += monto;
+                Cuenta.CantidadExtraccionesDiario++;
+                this.Cajero.Dinerodisponible -= monto;
+            }        
         }
 
         public void Deposito(int monto)
@@ -101,6 +104,7 @@ namespace ATM.Modelo
             TipoOperacion.Nombre = "Deposito";
             Monto = monto;
             Cuenta.Saldo += monto;
+            this.Cajero.CantidadDepositosActuales++;
         }
 
         public void Transferencia(int monto, int cbuDestino)

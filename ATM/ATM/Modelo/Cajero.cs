@@ -2,19 +2,20 @@
 namespace ATM.Modelo
 {
     public class Cajero
-    {
-         
+    {        
         private int _idCajero;
         private double _dineroDisponible;
-        private double _dineroDepositado;
         private int _papelDisponible;
+        private int _limiteDepositos;
+        private int _cantidadDepositosActuales;
 
-        public Cajero(int idCajero, double dinero, int papel)
+        public Cajero(int idCajero, double dinero, int papel, int cantidadDepositosActuales, int limiteDepositos)
         {
             _idCajero = idCajero;
             _dineroDisponible = dinero;
-
             _papelDisponible = papel;
+            _cantidadDepositosActuales = cantidadDepositosActuales;
+            _limiteDepositos = limiteDepositos;
         }
 
         public Cajero()
@@ -22,6 +23,8 @@ namespace ATM.Modelo
             _idCajero = 0;
             _dineroDisponible = 0.0;
             _papelDisponible = 0;
+            _cantidadDepositosActuales = 0;
+            _limiteDepositos = 200;
         }
 
         public double Dinerodisponible
@@ -42,10 +45,16 @@ namespace ATM.Modelo
             set { _idCajero = value; }
         }
 
-        public double DineroDepositado
+        public int LimiteDepositos
         {
-            get { return _dineroDepositado; }
-            set { _dineroDepositado = value; }
+            get { return _limiteDepositos; }
+            set { _limiteDepositos = value; }
+        }
+
+        public int CantidadDepositosActuales
+        {
+            get { return _cantidadDepositosActuales; }
+            set { _cantidadDepositosActuales = value; }
         }
 
         //////////////////////////////////////////////////////// METODOS PARA ALMACENAMIENTO CON DAO DE LA CLASE //////////////////////////////////////////

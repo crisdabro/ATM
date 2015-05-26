@@ -8,16 +8,18 @@ namespace ATM.Modelo
         private string _nombreTipo;     
         private double _limiteExtraccionDinero;
         private int _limiteCantidadExtracciones;
+        private double _limiteDeposito;
         //private List<Carga> _listaCargos;       
         //private List<Impuesto> _listaImpuestos;       
         //private List<Comision> _listaComisiones;
 
-        public TipoCuenta(int idTipoCuenta, string nombretipo, double limiteDinero, int limiteCantidadExtracciones) // , List<Carga> listaCargos, List<Impuesto> listaImpuestos, List<Comision> listaComisiones)
+        public TipoCuenta(int idTipoCuenta, string nombretipo, double limiteDinero, int limiteCantidadExtracciones, double limiteDeposito) // , List<Carga> listaCargos, List<Impuesto> listaImpuestos, List<Comision> listaComisiones)
         {
             IdTipoCuenta = idTipoCuenta;
             NombreTipo = nombretipo;
             LimiteExtraccionDinero = limiteDinero;
             LimiteCantidadExtracciones = limiteCantidadExtracciones;
+            LimiteDeposito = limiteDeposito;
             //_listaCargos = listaCargos;
             //_listaImpuestos = listaImpuestos;
             //_listaComisiones = listaComisiones;
@@ -29,6 +31,7 @@ namespace ATM.Modelo
             NombreTipo = "";
             LimiteExtraccionDinero = 0.0;
             LimiteCantidadExtracciones = 0;
+            LimiteDeposito = 0.0;
             //_listaCargos = null;
             //_listaImpuestos = null;
             //_listaComisiones = null;
@@ -57,6 +60,13 @@ namespace ATM.Modelo
             get { return _limiteCantidadExtracciones; }
             set { _limiteCantidadExtracciones = value; }
         }
+
+        public double LimiteDeposito
+        {
+            get { return _limiteDeposito; }
+            set { _limiteDeposito = value; }
+        }
+
 
         //public List<Carga> ListaCargos
         //{

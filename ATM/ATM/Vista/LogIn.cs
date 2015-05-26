@@ -28,15 +28,15 @@ namespace ATM.Vista
         {
             //CREA DATOS DEL CAJERO EN EL QUE ESTAS PARADO
             CajeroDAO cajeroDao = new CajeroDAO();
-            Cajero cajero = new Cajero(1, 175000, 100);
+            Cajero cajero = new Cajero(1, 175000, 100, 0, 200);
             cajeroDao.Agregar(cajero);
 
             //CREA TIPOS DE CUENTA
             //int idTipoCuenta, string nombretipo, double limiteDinero, int limiteCantidadExtracciones
             TipoCuentaDAO datosTipoCuentaDao = new TipoCuentaDAO();
-            TipoCuenta tipoCuenta = new TipoCuenta(1, "CtaCrt", 8000, 8);//CREA TIPO DE CUENTA
+            TipoCuenta tipoCuenta = new TipoCuenta(1, "CtaCrt", 8000, 8, 3000);//CREA TIPO DE CUENTA
             datosTipoCuentaDao.Agregar(tipoCuenta);
-            tipoCuenta = new TipoCuenta(2, "Caja Ahorro", 3000, 5);
+            tipoCuenta = new TipoCuenta(2, "Caja Ahorro", 3000, 5, 3000);
             datosTipoCuentaDao.Agregar(tipoCuenta);
 
             //CREA DATOS TARJETA PARA CLIENTE
